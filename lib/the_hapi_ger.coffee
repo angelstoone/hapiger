@@ -19,7 +19,7 @@ namespace_request_schema = Joi.object().keys({
 configuration_schema = Joi.object().keys({
   actions:                       Joi.object()
   minimum_history_required:      Joi.number().integer().min(0)
-  neighbourhood_search_size:     Joi.number().integer().min(1).max(250)
+  neighbourhood_search_size:     Joi.number().integer().min(1).max(1000)
   similarity_search_size:        Joi.number().integer().min(1).max(250)
   neighbourhood_size:            Joi.number().integer().min(1).max(250)
   recommendations_per_neighbour: Joi.number().integer().min(1).max(250)
