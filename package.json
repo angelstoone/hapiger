@@ -21,21 +21,21 @@
     "hapiger": "./bin/hapiger"
   },
   "license": "MIT",
-  "dependencies"  : {
-    "hapi": "10.4.1",
-    "joi": "6.9.0",
-    "boom": "2.9.0",
-    "good": "6.4.0",
-    "good-console": "5.1.0",
+  "dependencies": {
     "bluebird": "2.10.2",
-    "coffee-script": "1.9.3",
+    "boom": "2.9.0",
     "chalk": "0.5.1",
-    "underscore": "1.7.0",
+    "coffee-script": "1.9.3",
     "commander": "2.6.0",
     "ger": "github:angelstoone/ger",
-    "ger_rethinkdb_esm": "0.0.05",
     "ger_mysql_esm": "0.0.2",
-    "moment": "2.9.0"
+    "ger_rethinkdb_esm": "0.0.05",
+    "good": "6.4.0",
+    "good-console": "5.1.0",
+    "hapi": "10.4.1",
+    "joi": "6.9.0",
+    "moment": "2.9.0",
+    "underscore": "1.7.0"
   },
   "devDependencies": {
     "mocha": "2.3.3",
