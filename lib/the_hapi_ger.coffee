@@ -19,10 +19,10 @@ namespace_request_schema = Joi.object().keys({
 configuration_schema = Joi.object().keys({
   actions:                       Joi.object()
   minimum_history_required:      Joi.number().integer().min(0)
-  neighbourhood_search_size:     Joi.number().integer().min(1).max(100000)
-  similarity_search_size:        Joi.number().integer().min(1).max(250)
-  neighbourhood_size:            Joi.number().integer().min(1).max(250)
-  recommendations_per_neighbour: Joi.number().integer().min(1).max(250)
+  neighbourhood_search_size:     Joi.number().integer().min(1).max(10000)
+  similarity_search_size:        Joi.number().integer().min(1).max(10000)
+  neighbourhood_size:            Joi.number().integer().min(1).max(10000)
+  recommendations_per_neighbour: Joi.number().integer().min(1).max(10000)
   filter_previous_actions:       Joi.array().items(Joi.string())
   event_decay_rate:              Joi.number().min(1).max(10)
   time_until_expiry:             Joi.number().integer().min(0).max(2678400) #seconds in a month
